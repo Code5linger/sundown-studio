@@ -37,6 +37,12 @@ body {
     width: 100%;
 }
 
+#main {
+    position: relative;
+    /* background: black; */
+    z-index: 10;
+}
+
 #page1 {
     position: relative;
     min-height: 100vh;
@@ -316,4 +322,125 @@ nav {
     to {
         transform: translateX(-100%);
     }
+}
+
+#page3 {
+    height: 100vh;
+    width: 100%;
+    background-color: #efeae3;
+
+}
+
+.elem {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+    overflow: hidden;
+    /* background-color: crimson; */
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 0 2vw;
+}
+
+.elem h2 {
+    position: relative;
+    font-size: 3vw;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: -100%;
+    height: 100%;
+    width: 100%;
+    background: #fe800a;
+
+    transition: all ease 0.2s;
+}
+
+.elem:hover .overlay {
+    top: 0;
+}
+
+#fixedImage {
+    position: fixed;
+    z-index: 99;
+    height: 30vw;
+    width: 23vw;
+    border-radius: 10px;
+    left: 50%;
+    top: 25%;
+    display: none;
+    background-size: cover;
+    background-position: center;
+}
+
+#page4 {
+    height: 35vh;
+    width: 100%;
+    padding: 8vw 2vw;
+    background: #efeae3;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: grid;
+    place-content: center;
+    text-align: center;
+    font-size: 18px;
+    border-left: 1px solid black;
+
+
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#page5 {
+    height: 100vh;
+    width: 100%;
+}
+
+#footer {
+    position: fixed;
+    z-index: 9;
+    bottom: 0;
+
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-end; */
+    justify-content: flex-end;
+
+    height: 100vh;
+    width: 100%;
+    background: black;
+    color: whitesmoke;
+    padding: 1vw 3vw;
+
+}
+
+#footer h1 {
+    font-size: 23vw;
+}
+
+#footerDiv {
+    height: 20vh;
+    width: 100%;
+    background-color: crimson;
+}
+
+#footerBottom {
+    border-top: 1px solid #dadada;
+    height: 10vh;
+    width: 100%;
 }
